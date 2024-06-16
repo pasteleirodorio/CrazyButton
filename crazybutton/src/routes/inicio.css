@@ -1,6 +1,17 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: #FFDD95;
+  overflow: hidden;
+}
+
+
 .Container-Inicio {
     position: relative;
-    left: 100px;
+    left: 80px;
     bottom: 60px;
 
 }
@@ -20,7 +31,7 @@
     position: relative;
     transition: .3s;
     bottom: 250px;
-    left: 850px;
+    left: 800px;
   }
   
   .botao .back {

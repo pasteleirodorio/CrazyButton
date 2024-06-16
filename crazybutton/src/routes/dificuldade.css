@@ -1,3 +1,14 @@
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: #FFDD95;
+  overflow: hidden;
+  
+}
+
 .placa {
     position: relative;
     bottom: 260px;
@@ -11,44 +22,97 @@
     
 }
 
-.botao-placa {
-    all: unset;
-    position: relative;
-    height: 4em;
-    width: 10em;
-    padding: 8px 24px;
-    border-radius: 10px;
-    background: linear-gradient(180deg, #282828, #202020);
-    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
-                  inset 0 -8px 8px rgba(0, 0, 0, 0.25),
-                  0 0 0 2px rgba(0, 0, 0, 0.75),
-                  10px 20px 25px rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .botao-placa::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 4px;
-    bottom: 14px;
-    right: 12px;
-    background: linear-gradient(90deg, #232323, #4a4a4a);
-    border-radius: 10px;
-    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25),
-                  10px 5px 10px rgba(0, 0, 0, 0.15);
-    border-left: 1px solid #0004;
-    border-bottom: 1px solid #0004;
-    border-top: 1px solid #0009;
-  }
-  
-  .botao-placa span {
-    font-size: 1.5rem;
-    color: white;
-    position: relative;
-    margin-top: -8px;
-  }
+.Icone {
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 40px;
+  position: relative;
+  bottom: 370px;
+  left: 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Icone a:hover {
+  color: #F2B223;
+}
+
+.Icone a {
+  color: black
+}
+
+
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 50px;
+  right: 180px;
+  width: 147px;
+ }
+ 
+ button.botao-dificuldade {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #F2B223;
+  border: 2px solid #F2B223;
+  border-radius: 0.75em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.botao-dificuldade::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b65d05;
+  border-radius: inherit;
+  -webkit-box-shadow: 0 0 0 2px #FF7F01, 0 0.625em 0 0 #FFDD95;
+  box-shadow: 0 0 0 2px #FF7F01, 0 0.625em 0 0 #FFDD95;
+  -webkit-transform: translate3d(0, 0.75em, -1em);
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+ }
+ 
+ button.botao-dificuldade:hover {
+  background: #FF7F01;
+  -webkit-transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
+ }
+ 
+ button.botao-dificuldade:hover::before {
+  -webkit-box-shadow: 0 0 0 2px #FF7F01, 0 0.5em 0 0 #FFDD95;
+  box-shadow: 0 0 0 2px #FF7F01, 0 0.5em 0 0 #FFDD95;
+  -webkit-transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
+ }
+ 
+ button.botao-dificuldade:active {
+  background: #F2B223;
+  -webkit-transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
+ }
+ 
+ button.botao-dificuldade:active::before {
+  -webkit-box-shadow: 0 0 0 2px #FF7F01, 0 0 ;
+  box-shadow: 0 0 0 2px #FF7F01, 0 0 ;
+  -webkit-transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
+ }
 

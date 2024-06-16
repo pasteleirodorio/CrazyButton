@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  background-color: #FFDD95;
+  overflow: hidden;
+}
+
+
+.Container-facil {    
+  position: relative;
+  left: 900px;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Icone-facil {
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 40px;
+  position: relative;
+  bottom: 350px;
+  right: 870px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Icone-facil a:hover {
+  color: #F2B223;
+}
+
+.Icone-facil a {
+  color: black
+}
+
+.letra-botao {
+  --key-text-color: #969faf;
+  --docsearch-key-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff,
+    0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  --docsearch-key-gradient: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
+  border: none;
+  background: var(--docsearch-key-gradient);
+  border-radius: 3px;
+  box-shadow: var(--docsearch-key-shadow);
+  color: var(--key-text-color);
+  cursor: pointer;
+  height: 2.5em;
+  text-align: center;
+  padding: 0.6em;
+  margin: 0 0.6em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  min-width: 1em;
+  line-height: 1em;
+  user-select: none;
+  width: 50px;
+  margin-left: 25px;
+  transition: background-color 0s ease, color 0s ease;
+}
+
+.letra-botao.correto {
+  color: rgb(3, 184, 3);
+}
+
+.letra-botao.incorreto {
+  color: red;
+}
+
+.tempo-facil {
+  position: relative;
+  top: 40px;
+  right: 14px;
+}
+
+.botao-facil-play {
+  position: relative;
+  top: 50px;
+  right: 75px;
+}
+
+.score-facil {
+  color: black;
+  position: relative;
+  top: 50px;
+
+}
